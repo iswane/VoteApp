@@ -38,6 +38,7 @@ jobs:
         run: mvn -Dtest=\!TestPerformance verify
 
   publish:
+    needs: test
     runs-on: ubuntu-latest
     permissions:
       contents: read
