@@ -70,7 +70,7 @@
 	<repository>
 		<id>github</id>
 		<name>GitHub Packages</name>
-		<url>https://maven.pkg.github.com/iswnae/VoteApp</url>
+		<url>https://maven.pkg.github.com/iswane/VoteApp</url>
 	</repository>
 </distributionManagement>
 </project>
