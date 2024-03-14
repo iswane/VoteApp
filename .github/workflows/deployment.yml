@@ -15,7 +15,7 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
       - name: Build with Maven
-        run: mvn compile -Dmaven.test.skip=true
+        run: mvn compile
 
   test:
 
@@ -30,7 +30,7 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
       - name: Test with maven
-        run: mvn -Dtest=\!TestPerformance verify
+        run: mvn verify
 
   package:
     needs: test
