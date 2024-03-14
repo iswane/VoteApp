@@ -58,7 +58,8 @@ jobs:
       - name: Package
         run: mvn -B package -Dmaven.test.skip=true --file pom.xml
       - name: Publish package
-        run: mvn -B deploy -Dmaven.test.skip=true
+        run: mvn -B deploy -Dmaven.test.skip=true -s $GITHUB_WORSPACE/settings.xml
+
 
 #name: Java CI with Maven
 #
